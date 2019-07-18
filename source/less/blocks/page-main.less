@@ -1,34 +1,31 @@
-.page-main__articles--plus {
-  display: none;
-}
+
 
 @media (min-width: @tablet-width) {
   .page-main {
     display: flex;
-    flex-wrap: wrap;
-  }
-  .page-main__articles {
-    width: 50%;
-  }
-  .page-main__news {
-    width: 50%;
+    flex-direction: column;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-main {
-    flex-wrap: nowrap;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .page-main__articles {
-    width: 25%;
+
+  .main__wrapper {
+    display: flex;
   }
-  .page-main__news {
-    width: 25%;
+
+  .services__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
   }
-  .page-main__articles--plus {
-    display: block;
-  }
-  .page-main__side {
-    width: 25%;
+
+  .news {
+    width: 30%;
+
   }
 }

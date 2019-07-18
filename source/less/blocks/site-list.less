@@ -19,6 +19,8 @@
 }
 
 .site-list {
+  background-color: @st;
+
   padding: 0;
   margin: 0;
 }
@@ -26,12 +28,16 @@
 @media (max-width: @mobile-width-only) {
   .site-list__item {
     width: 100%;
-    border-bottom: 1px solid @st;
+    border-bottom: 1px solid @hov;
     text-align: center;
   }
 
+  .site-list__item:first-child {
+    border-top: 1px solid @hov;
+  }
+
   .site-list__item:hover {
-    border-bottom: 1px solid @hov;
+
   }
   .site-list__item:active {
     border-bottom: 1px solid @st;
@@ -46,9 +52,7 @@
   }
 
   .site-list__item {
-    border: 1px solid @st;
-    margin-left: -1px;
-    margin-bottom: -1px;
+
   }
 
   .site-list__item:hover {
