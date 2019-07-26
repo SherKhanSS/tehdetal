@@ -1,10 +1,27 @@
+body {
+  background-image: url("../img/fon_2_cor.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+}
 
+.page-main {
+  padding: 0 10px;
+}
+
+.facilities {
+  // border: 1px solid @st;
+  // border-radius: 10px;
+  // padding: 20px;
+}
 
 @media (min-width: @tablet-width) {
   .page-main {
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
   }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -12,20 +29,7 @@
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-  }
 
-  .main__wrapper {
-    display: flex;
-  }
-
-  .services__wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-  }
-
-  .news {
-    width: 30%;
-
+    font-size: 16px;
   }
 }
