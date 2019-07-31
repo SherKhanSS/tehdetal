@@ -9,10 +9,39 @@ body {
   padding: 0 10px;
 }
 
-.facilities {
-  // border: 1px solid @st;
-  // border-radius: 10px;
-  // padding: 20px;
+.services,
+.gallery,
+.option,
+.news {
+  border-bottom: 1px solid @hov;
+}
+
+.services__head {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.services__item a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.services__item a:hover {
+  color: @hov;
+}
+
+.option__headline {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0 10px 0;
+}
+
+.option__description {
+  padding-bottom: 10px;
 }
 
 @media (min-width: @tablet-width) {

@@ -5,6 +5,9 @@
     <title>Tehdetal</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style-slider.css">
+
   </head>
   <body>
 
@@ -89,9 +92,7 @@
         </section>
 
         <section class="facilities">
-          <h2 class="visually-hidden"></h2>
-            <p>Наша компания специализируется на изготовлении малогабаритных и среднегабаритных деталей методом механической обработки.
-              Выполняем тококарные,фрезерные, долбежные и сверлильные работы на станках:</p>
+          <h2 class="services__head">Оборудование</h2>
             <p>Токарнае:16К25; ДИП300; ДИП500</p>
             <p>Фрезерные:6р13;676п</p>
             <p>Долбежный: Hahn & Kolb</p>
@@ -102,22 +103,33 @@
             <p>Возможен наличный и безналичный расчёт.</p>
         </section>
 
-        <section class="gallery">
-          <h2 class="visually-hidden"></h2>
-            <div class="gallery__img">
-              <img src="img/1.jpg">
+        <div class='slider'>
+          <div class='slider-wrap'>
+            <div class="slide">
             </div>
-            <div class="gallery__img">
-              <img src="img/4.jpg">
+            <div class="slide">
             </div>
-            <div class="gallery__img">
-              <img src="img/3.jpg">
+            <div class="slide">
             </div>
-            <div class="gallery__img">
-              <img src="img/2.jpg">
+            <div class="slide">
             </div>
-        </section>
+            <div class="slide">
+            </div>
+            <div class="slide">
+            </div>
+            <div class="slide">
+            </div>
+            <div class="slide">
+            </div>
+            <div class="slide">
+            </div>
+          </div>
 
+          <div class="slider-buttons">
+            <button class="btn-prev">Влево</button>
+            <button class="btn-next">Вправо</button>
+          </div>
+        </div>
 
         <section class="option">
           <a class="option__headline" name="tooling">Механическая обработка</a>
@@ -222,5 +234,8 @@
     </footer>
 
     <script src="js/nav.js"></script>
+
+    <script src="js/swipe.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
