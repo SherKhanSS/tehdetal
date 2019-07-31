@@ -20,11 +20,19 @@
 .email__link {
   color: @hov;
   text-decoration: none;
+  position: relative;
 }
 
 .page-header__logo {
   margin-left: 10px;
   line-height: 16px;
+}
+
+.top-menu-input {
+  position: relative;
+  border: none;
+  margin-top: 12px;
+  border: 1px solid @hov;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -66,7 +74,6 @@
 
   .page-header__email {
     width: 300px;
-    // outline: 1px solid red;
   }
 
   .page-header__logo {
@@ -88,5 +95,51 @@
     margin-left: auto;
     margin-right: auto;
     // outline: 1px solid red;
+  }
+
+  .phone__link:first-child::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -40px;
+
+    width: 42px;
+    height: 42px;
+
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .email__link::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -30px;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .top-menu-search {
+    position: relative;
+  }
+
+  .top-menu-search::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -28px;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 }

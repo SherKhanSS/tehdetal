@@ -17,15 +17,20 @@ body {
 }
 
 .services__head {
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 400;
 }
 
 .services__item a {
   text-decoration: none;
-  color: inherit;
-  font-size: 20px;
-  line-height: 30px;
+  color: black;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.services__item__link {
+  border-bottom: 1px solid @hov;
 }
 
 .services__item a:hover {
@@ -34,14 +39,31 @@ body {
 
 .option__headline {
   display: block;
-  font-weight: 400;
   font-size: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   margin: 20px 0 10px 0;
 }
 
 .option__description {
   padding-bottom: 10px;
+}
+
+.services__list,
+.option_list {
+  color: @hov;
+}
+
+.option_item {
+  color: black;
+}
+
+.orange {
+  color: @hov;
+}
+
+.locksmith-work {
+  margin-bottom: 10px;
 }
 
 @media (min-width: @tablet-width) {
@@ -60,5 +82,11 @@ body {
     margin-right: auto;
 
     font-size: 16px;
+    line-height: 20px;
+  }
+
+  .services__item a {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
